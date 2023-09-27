@@ -1,0 +1,154 @@
+<header class="header">
+
+  
+
+    
+
+    <div class="header-bottom" data-header>
+      <div class="container">
+  
+        <a href="#" class="logo"><img src="assets/images/logo.png"></a>
+  
+        <nav class="navbar container" data-navbar [ngClass]="status ? 'active' : ''">
+          <ul class="navbar-list">
+  
+            <li>
+              <a href="#home" class="navbar-link" data-nav-link>Home</a>
+            </li>
+  
+            <li>
+              <a  [routerLink]="['/services']" class="navbar-link" data-nav-link>Services</a>
+            </li>
+  
+            <li>
+              <a [routerLink]="['/about']" class="navbar-link" data-nav-link>About Us</a>
+            </li>
+  
+            <li>
+              <a [routerLink]="['/blog']" class="navbar-link" data-nav-link>Blog</a>
+            </li>
+  
+            
+            <li>
+              <a [routerLink]="['/login']"         class="navbar-link" data-nav-link>Login</a>
+            </li>
+  
+          </ul>
+        </nav>
+  
+        <button [routerLink]="['/book']" class="btn">Book appointment</button>
+  
+        <button class="nav-toggle-btn" aria-label="Toggle menu" data-nav-toggler (click)="addToggle()">
+          <ion-icon name="menu-sharp" aria-hidden="true" class="menu-icon"></ion-icon>
+          <ion-icon name="close-sharp" aria-hidden="true" class="close-icon"></ion-icon>
+        </button>
+  
+      </div>
+    </div>
+</header>
+  
+ <!-- 
+      - #SERVICE
+    -->
+    <br>  <br>    <br>      
+
+    <section class="service" aria-label="service"  id="service">
+        <div class="container">
+            <br> <br> <br>
+          <p class="section-subtitle text-center">Our Services</p>
+  
+          <h2 class="h2 section-title text-center" style="color: #c6a16e;">What We Provide</h2>
+  
+          <ul class="service-list">
+  
+            <li>
+              <div class="service-card">
+  
+                <div class="card-icon">
+                  <img src="assets/images/Stylish Hair Cut.png" width="100" height="100" loading="lazy"
+                    alt="service icon" class="w-100">
+                </div>
+  
+                <div>
+                  <h3 class="H3 card-title" style="color: #c6a16e;">Stylish Hair Cut</h3>
+  
+                  <p class="Card-text">
+                    Aenean eleifend turpis tellus, nec laoreet metus elementum ac.
+                  </p>
+                </div>
+  
+              </div>
+            </li>
+  
+            <li>
+              <div class="service-card">
+  
+                <div class="card-icon">
+                  <img src="assets/images/shaves.png" width="100" height="100" loading="lazy"
+                    alt="service icon" class="w-100">
+                </div>
+  
+                <div>
+                  <h3 class="h3 card-title" style="color: #c6a16e">Shaves</h3>
+  
+                  <p class="Card-text">
+                    Aenean eleifend turpis tellus, nec laoreet metus elementum ac.
+                  </p>
+                </div>
+  
+              </div>
+            </li>
+  
+            <li>
+              <div class="service-card">
+  
+                <div class="card-icon">
+                  <img src="assets/images/washing.jpg" width="100" height="100" loading="lazy"
+                    alt="service icon" class="w-100">
+                </div>
+  
+                <div>
+                  <h3 class="h3 card-title" style="color: #c6a16e">Washing</h3>
+  
+                  <p class="Card-text">
+                    Aenean eleifend turpis tellus, nec laoreet metus elementum ac.
+                  </p>
+                </div>
+  
+              </div>
+            </li>
+  
+            <li class="service-banner">
+              <figure>
+                <img src="assets/images/about-logo.png" width="409" height="467" loading="lazy"
+                  alt="service banner" class="w-100">
+              </figure>
+            </li>
+  
+            <li>
+              <div class="service-card">
+  
+                <div class="card-icon">
+                  <img src="assets/images/portfolio-3.jpg" width="100" height="100" loading="lazy"
+                    alt="service icon" class="w-100">
+                </div>
+  
+                <div>
+                  <h3 class="h3 card-title" style="color: #c6a16e">Kids</h3>
+  
+                  <p class="Card-text">
+                    Aenean eleifend turpis tellus, nec laoreet metus elementum ac.
+                  </p>
+                </div>
+  
+              </div>
+            </li>
+  
+           
+          </ul>
+  
+        </div>
+      </section>
+  
+  
+  

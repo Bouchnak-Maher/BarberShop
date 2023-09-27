@@ -1,0 +1,783 @@
+<!-- 
+  - #HEADER
+-->
+<body >
+<header class="header">
+
+  
+
+    
+
+  <div class="header-bottom" data-header>
+    <div class="container">
+
+      <a href="#" class="logo"><img src="assets/images/logo.png"></a>
+
+      <nav class="navbar container" data-navbar [ngClass]="status ? 'active' : ''">
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#home" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li>
+            <a  [routerLink]="['/services']" class="navbar-link" data-nav-link>Services</a>
+          </li>
+
+          <li>
+            <a [routerLink]="['/about']" class="navbar-link" data-nav-link>About Us</a>
+          </li>
+
+          <li>
+            <a [routerLink]="['/blog']" class="navbar-link" data-nav-link>Blog</a>
+          </li>
+
+          
+          <li>
+            <a [routerLink]="['/login']"         class="navbar-link" data-nav-link>Login</a>
+          </li>
+            <li>
+            <a href="#footer"       class="navbar-link" data-nav-link>Contact</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      
+
+      <button class="nav-toggle-btn" aria-label="Toggle menu" data-nav-toggler (click)="addToggle()">
+        <ion-icon name="menu-sharp" aria-hidden="true" class="menu-icon"></ion-icon>
+        <ion-icon name="close-sharp" aria-hidden="true" class="close-icon"></ion-icon>
+      </button>
+
+    </div>
+  </div>
+
+</header>
+
+
+
+
+
+<main>
+  <article>
+
+    <!-- 
+      - #HERO
+    -->
+
+    <section class="section hero" id="home" style="background-image: url('assets/images/h1_hero.png')"
+      aria-label="hero">
+      <div class="container">
+
+        <div class="hero-content">
+
+          <p class="section-subtitle">Welcome To Dentelo</p>
+
+          <h1 class="h1 hero-title" style="color:  #c6a16e;">We Are Best Barber Service</h1>
+
+          <p class="hero-text">
+            Donec vitae libero non enim placerat eleifend aliquam erat volutpat. Curabitur diam ex, dapibus purus
+            sapien, cursus sed
+            nisl tristique, commodo gravida lectus non.
+          </p>
+
+          
+<br><br><br>
+              <button [routerLink]="['/appointement']" class="btn">Book appointment</button>
+          
+
+        </div>
+       
+      
+      </div>
+      <br><br><br> <br><br><br>
+    </section>
+
+
+
+
+
+    <!-- 
+      - #SERVICE
+    -->
+
+    <section aria-label="service">
+  
+      <div class="container">
+      
+        <p class="section-subtitle text-center">Our Services</p>
+
+        <h2 class="h2 section-title text-center">What We Provide</h2>
+
+        <ul class="service-list">
+
+          <li>
+            <div class="service-card">
+
+              <div class="card-icon">
+                <img src="assets/images/Stylish Hair Cut.png" width="100" height="100" loading="lazy"
+                  alt="service icon" class="w-100">
+              </div>
+
+              <div>
+                <h3 class="h3 card-title">Stylish Hair Cut</h3>
+
+                <p class="card-text">
+                  Aenean eleifend turpis tellus, nec laoreet metus elementum ac.
+                </p>
+              </div>
+
+            </div>
+          </li>
+
+          <li>
+            <div class="service-card">
+
+              <div class="card-icon">
+                <img src="assets/images/shaves.png" width="100" height="100" loading="lazy"
+                  alt="service icon" class="w-100">
+              </div>
+
+              <div>
+                <h3 class="h3 card-title">Shaves</h3>
+
+                <p class="card-text">
+                  Aenean eleifend turpis tellus, nec laoreet metus elementum ac.
+                </p>
+              </div>
+
+            </div>
+          </li>
+
+          <li>
+            <div class="service-card">
+
+              <div class="card-icon">
+                <img src="assets/images/washing.jpg" width="100" height="100" loading="lazy"
+                  alt="service icon" class="w-100">
+              </div>
+
+              <div>
+                <h3 class="h3 card-title">Washing</h3>
+
+                <p class="card-text">
+                  Aenean eleifend turpis tellus, nec laoreet metus elementum ac.
+                </p>
+              </div>
+
+            </div>
+          </li>
+
+          <li class="service-banner">
+            <figure>
+              <img src="assets/images/about-logo.png" width="409" height="467" loading="lazy"
+                alt="service banner" class="w-100">
+            </figure>
+          </li>
+
+          <li>
+            <div class="service-card">
+
+              <div class="card-icon">
+                <img src="assets/images/portfolio-3.jpg" width="100" height="100" loading="lazy"
+                  alt="service icon" class="w-100">
+              </div>
+
+              <div>
+                <h3 class="h3 card-title">Kids</h3>
+
+                <p class="card-text">
+                  Aenean eleifend turpis tellus, nec laoreet metus elementum ac.
+                </p>
+              </div>
+
+            </div>
+          </li>
+
+         
+        </ul>
+
+      </div>
+    </section>
+
+
+
+
+
+
+
+    <!-- 
+      - #ABOUT
+    -->
+    <section class="section about" id="about" aria-label="about">
+      <div class="container">
+  
+        <figure class="about-banner">
+          <img src="assets/images/Stylish Hair Cut.png" width="370" height="238" loading="lazy" alt="about banner"
+            class="w-100">
+        </figure>
+  
+        <div class="about-content">
+  
+          <p class="section-subtitle">About Us</p>
+  
+          <h2 class="h2 section-title" style="color:black">We Care For Your Dental Health</h2>
+  
+          <p class="section-text section-text-1">
+            Aliquam ac sem et diam iaculis efficitur. Morbi in enim odio. Nullam quis volutpat est, sed dapibus
+            sapien. Cras
+            condimentum eu velit id tempor. Curabitur purus sapien, cursus sed nisl tristique, commodo vehicula arcu.
+          </p>
+  
+          <p class="section-text">
+            Aliquam erat volutpat. Aliquam enim massa, sagittis blandit ex mattis, ultricies posuere sapien. Morbi a
+            dignissim enim.
+            Fusce elementum, augue in elementum porta, sapien nunc volutpat ex, a accumsan nunc lectus eu lectus.
+          </p>
+  
+          <a href="#" class="btn">Read more</a>
+  
+        </div>
+  
+      </div>
+    </section>
+  
+  
+  
+
+
+    <!-- 
+      - #DOCTOR
+    -->
+
+    <section class="section doctor" aria-label="doctor">
+      <div class="container">
+
+        <p class="section-subtitle text-center">Our Doctor</p>
+
+        <h2 class="h2 section-title text-center">Best Expert Barber</h2>
+
+        <ul class="has-scrollbar">
+
+          <li class="scrollbar-item">
+            <div class="doctor-card">
+
+              <div class="card-banner img-holder" style="--width: 460; --height: 500;">
+                <img src="assets/images/team1.png" width="460" height="500" loading="lazy" alt="Howard Holmes"
+                  class="img-cover">
+              </div>
+
+              <h3 class="h3">
+                <a href="#" class="card-title">Howard Holmes</a>
+              </h3>
+
+              <p class="card-subtitle">Dentist</p>
+
+              <ul class="card-social-list">
+
+                <li>
+                  <a href="#" class="card-social-link">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="card-social-link">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="card-social-link">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                  </a>
+                </li>
+
+              </ul>
+
+            </div>
+          </li>
+
+          <li class="scrollbar-item">
+            <div class="doctor-card">
+
+              <div class="card-banner img-holder" style="--width: 460; --height: 500;">
+                <img src="assets/images/team2.png" width="460" height="500" loading="lazy" alt="Ella Thompson"
+                  class="img-cover">
+              </div>
+
+              <h3 class="h3">
+                <a href="#" class="card-title">Ella Thompson</a>
+              </h3>
+
+              <p class="card-subtitle">Dentist</p>
+
+              <ul class="card-social-list">
+
+                <li>
+                  <a href="#" class="card-social-link">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="card-social-link">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="card-social-link">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                  </a>
+                </li>
+
+              </ul>
+
+            </div>
+          </li>
+
+          <li class="scrollbar-item">
+            <div class="doctor-card">
+
+              <div class="card-banner img-holder" style="--width: 460; --height: 500;">
+                <img src="assets/images/team3.png" width="460" height="500" loading="lazy" alt="Vincent Cooper"
+                  class="img-cover">
+              </div>
+
+              <h3 class="h3">
+                <a href="#" class="card-title">Vincent Cooper</a>
+              </h3>
+
+              <p class="card-subtitle">Dentist</p>
+
+              <ul class="card-social-list">
+
+                <li>
+                  <a href="#" class="card-social-link">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="card-social-link">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="card-social-link">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                  </a>
+                </li>
+
+              </ul>
+
+            </div>
+          </li>
+
+          <li class="scrollbar-item">
+            <div class="doctor-card">
+
+              <div class="card-banner img-holder" style="--width: 460; --height: 500;">
+                <img src="assets/images/team-2.jpg" width="460" height="500" loading="lazy" alt="Danielle Bryant"
+                  class="img-cover">
+              </div>
+
+              <h3 class="h3">
+                <a href="#" class="card-title">Danielle Bryant</a>
+              </h3>
+
+              <p class="card-subtitle">Dentist</p>
+
+              <ul class="card-social-list">
+
+                <li>
+                  <a href="#" class="card-social-link">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="card-social-link">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="card-social-link">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                  </a>
+                </li>
+
+              </ul>
+
+            </div>
+          </li>
+
+        </ul>
+
+      </div>
+    </section>
+
+
+
+
+
+    <!-- 
+      - #CTA
+    -->
+
+    <section class="section cta" aria-label="cta"style="background-color: black;">
+      <div class="container" >
+
+        <figure class="cta-banner">
+          <img src="assets/images/about2.png" width="1056" height="1076" loading="lazy" alt="cta banner"
+            class="w-100">
+        </figure>
+
+        <div class="cta-content">
+
+          <p class="section-subtitle">Book Dentail Appointment</p>
+
+          <h2 class="h2 section-title">We Are open And Welcoming Patients</h2>
+
+          <a  [routerLink]="['/appointement']" class="btn">Book appointment</a>
+
+        </div>
+
+      </div>
+    </section>
+
+
+
+
+
+    <!-- 
+      - #BLOG
+    -->
+
+    <section class="section blog" id="blog" aria-label="blog">
+      <div class="container">
+
+        <p class="section-subtitle text-center"style="color: black">Our Blog</p>
+
+        <h2 class="h2 section-title text-center">Latest Blog & News</h2>
+
+        <ul class="blog-list">
+
+          <li>
+            <div class="blog-card">
+
+              <figure class="card-banner img-holder" style="--width: 1180; --height: 800;">
+                <img src="assets/images/home-blog1.png" width="1180" height="800" loading="lazy"
+                  alt="Cras accumsan nulla nec lacus ultricies placerat." class="img-cover">
+
+                <div class="card-badge"style="background-color: #c6a16e;">
+                  <ion-icon name="calendar-outline"></ion-icon>
+
+                  <time class="time" datetime="2022-03-24">24th March 2022</time>
+                </div>
+              </figure>
+
+              <div class="card-content">
+
+                <h3 class="h3">
+                  <a href="#" class="card-title" >Cras accumsan nulla nec lacus ultricies placerat.</a>
+                </h3>
+
+                <p class="card-text">
+                  Curabitur sagittis libero tincidunt tempor finibus. Mauris at dignissim ligula, nec tristique orci.
+                </p>
+
+                <a href="#" class="card-link">Read More</a>
+
+              </div>
+
+            </div>
+          </li>
+
+          <li>
+            <div class="blog-card">
+
+              <figure class="card-banner img-holder" style="--width: 1180; --height: 800;">
+                <img src="assets/images/gallery2.png" width="1180" height="800" loading="lazy"
+                  alt="Dras accumsan nulla nec lacus ultricies placerat." class="img-cover">
+
+                <div class="card-badge">
+                  <ion-icon name="calendar-outline"></ion-icon>
+
+                  <time class="time" datetime="2022-03-24">24th March 2022</time>
+                </div>
+              </figure>
+
+              <div class="card-content">
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Dras accumsan nulla nec lacus ultricies placerat.</a>
+                </h3>
+
+                <p class="card-text">
+                  Curabitur sagittis libero tincidunt tempor finibus. Mauris at dignissim ligula, nec tristique orci.
+                </p>
+
+                <a href="#" class="card-link">Read More</a>
+
+              </div>
+
+            </div>
+          </li>
+
+          <li>
+            <div class="blog-card">
+
+              <figure class="card-banner img-holder" style="--width: 1180; --height: 800;">
+                <img src="assets/images/home-blog2.png" width="1180" height="800" loading="lazy"
+                  alt="Seas accumsan nulla nec lacus ultricies placerat." class="img-cover">
+
+                <div class="card-badge">
+                  <ion-icon name="calendar-outline"></ion-icon>
+
+                  <time class="time" datetime="2022-03-24">24th March 2022</time>
+                </div>
+              </figure>
+
+              <div class="card-content">
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Seas accumsan nulla nec lacus ultricies placerat.</a>
+                </h3>
+
+                <p class="card-text">
+                  Curabitur sagittis libero tincidunt tempor finibus. Mauris at dignissim ligula, nec tristique orci.
+                </p>
+
+                <a href="#" class="card-link">Read More</a>
+
+              </div>
+
+            </div>
+          </li>
+
+        </ul>
+
+      </div>
+    </section>
+
+  </article>
+</main>
+
+
+
+
+
+<!-- 
+  - #FOOTER
+-->
+
+<footer class="footer" id="footer"style="background-color: black;">
+
+  <div class="footer-top section">
+    <div class="container">
+
+      <div class="footer-brand">
+
+        <a href="#" class="logo">Brber</a>
+
+        <p class="footer-text">
+          Mauris non nisi semper, lacinia neque in, dapibus leo. Curabitur sagittis libero tincidunt tempor finibus.
+          Mauris at
+          dignissim ligula, nec tristique orci.Quisque vitae metus.
+        </p>
+
+        <div class="schedule">
+          <div class="schedule-icon">
+            <ion-icon name="time-outline"></ion-icon>
+          </div>
+
+          <span class="span">
+            Monday - Saturday:<br>
+            9:00am - 10:00Pm
+          </span>
+        </div>
+
+      </div>
+
+      <ul class="footer-list">
+
+        <li>
+          <p class="footer-list-title">Other Links</p>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">
+            <ion-icon name="add-outline"style="color: white;"></ion-icon>
+
+            <span class="span">Home</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">
+            <ion-icon name="add-outline"style="color: white;"></ion-icon>
+
+            <span class="span">About Us</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">
+            <ion-icon name="add-outline"style="color: white;"></ion-icon>
+
+            <span class="span">Services</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">
+            <ion-icon name="add-outline"style="color: white;"></ion-icon>
+
+            <span class="span">Project</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">
+            <ion-icon name="add-outline"style="color: white;"></ion-icon>
+
+            <span class="span">Our Team</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">
+            <ion-icon name="add-outline"style="color: white;"></ion-icon>
+
+            <span class="span">Latest Blog</span>
+          </a>
+        </li>
+
+      </ul>
+
+      <ul class="footer-list">
+
+        <li>
+          <p class="footer-list-title">Our Services</p>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">
+            <ion-icon name="add-outline"style="color: white;"></ion-icon>
+
+            <span class="span">Root Canal</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">
+            <ion-icon name="add-outline"style="color: white;"></ion-icon>
+
+            <span class="span">Alignment Teeth</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">
+            <ion-icon name="add-outline"style="color: white;"></ion-icon>
+
+            <span class="span">Cosmetic Teeth</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">
+            <ion-icon name="add-outline"style="color: white;"></ion-icon>
+
+            <span class="span">Oral Hygiene</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">
+            <ion-icon name="add-outline"style="color: white;"></ion-icon>
+
+            <span class="span">Live Advisory</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">
+            
+            <ion-icon name="add-outline" style="color: white;"></ion-icon>
+          
+
+            <span class="span">Cavity Inspection</span>
+          </a>
+        </li>
+
+      </ul>
+
+      <ul class="footer-list">
+
+        <li>
+          <p class="footer-list-title">Contact Us</p>
+        </li>
+
+        <li class="footer-item">
+          <div class="item-icon">
+            <ion-icon name="location-outline"></ion-icon>
+          </div>
+
+          <address class="footer-link">
+            Jassa,<br>
+            Ludhiana
+          </address>
+        </li>
+
+        <li class="footer-item">
+          <div class="item-icon">
+            <ion-icon name="call-outline"></ion-icon>
+          </div>
+
+          <a href="tel:+000000000" class="footer-link">+91-000-000-0000</a>
+        </li>
+
+        <li class="footer-item" >
+          <div class="item-icon" >
+            <ion-icon name="mail-outline" ></ion-icon>
+          </div>
+
+          <a href="mailto:help@example.com" class="footer-link">help@example.com</a>
+        </li>
+
+      </ul>
+      <ul class="social-list">
+
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+
+  
+
+</footer>
+</body>
+

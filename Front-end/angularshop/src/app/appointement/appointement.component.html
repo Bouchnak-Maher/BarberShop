@@ -1,0 +1,249 @@
+<body>
+	<header class="header" >
+	
+	  
+	
+		
+	
+		<div class="header-bottom" data-header>
+		  <div class="container">
+	  
+			<a href="#" class="logo"><img src="assets/images/logo.png"></a>
+	  
+			<nav class="navbar container" data-navbar [ngClass]="status ? 'active' : ''">
+				<ul class="navbar-list">
+		
+				  <li>
+					<a href="#home" class="navbar-link" data-nav-link>Home</a>
+				  </li>
+		
+				  <li>
+					<a  [routerLink]="['/services']" class="navbar-link" data-nav-link>Services</a>
+				  </li>
+		
+				  <li>
+					<a [routerLink]="['/about']" class="navbar-link" data-nav-link>About Us</a>
+				  </li>
+		
+				  <li>
+					<a [routerLink]="['/blog']" class="navbar-link" data-nav-link>Blog</a>
+				  </li>
+		
+				  
+				  <li>
+					<a [routerLink]="['/login']"         class="navbar-link" data-nav-link>Login</a>
+				  </li>
+		
+				</ul>
+			  </nav>
+	  
+			<button  class="btn">Book appointment</button>
+	  
+			<button class="nav-toggle-btn" aria-label="Toggle menu" data-nav-toggler (click)="addToggle()">
+			  <ion-icon name="menu-sharp" aria-hidden="true" class="menu-icon"></ion-icon>
+			  <ion-icon name="close-sharp" aria-hidden="true" class="close-icon"></ion-icon>
+			</button>
+	  
+		  </div>
+		</div>
+	  
+	  </header>
+	  
+	 <br><br><br><br><br>
+	 <section class="booking_section">
+		
+		<form (ngSubmit) = "OnSubmit()"></form>
+		<div class="container">
+	
+			
+			<!-- RESERVATION FORM -->
+	
+			<form (ngSubmit) = "onSubmit()">
+			
+				<!-- SELECT SERVICE -->
+	
+				<div class="select_services_div tab_reservation" id="services_tab">
+	
+					<!-- ALERT MESSAGE -->
+	
+					<div class="alert alert-danger" role="alert" style="display: none">
+						Please, select at least one service!
+					</div>
+	
+					
+	
+					<!-- SERVICES TAB -->
+					
+					<div class="items_tab" id="Page1">
+						<div class="text_header">
+							<h1>
+								1. Choice of services
+							</h1>
+						</div>
+						
+						<div  *ngFor = "let employee of Serviceslist"class='itemListElement'><div class = 'item_details'><div> {{ employee.service_name }} </div><div class = 'item_select_part'><span class = 'service_duration_field'>{{ employee.service_duration }}min</span><div class = 'service_price_field'><span style = 'font-weight: bold;'>{{ employee.service_price }}$ &nbsp;&nbsp;</span></div>                                    	<div class="select_item_bttn">
+							<div class="" >
+								
+									<label >
+										
+									  <input type="checkbox" [(ngModel)]="checkboxOptions[employee.service_id-1].checked" name="{{ checkboxOptions[employee.service_id-1].value }}"  style="display: none;">
+									  <p class="button-like" [class.selected]="checkboxOptions[employee.service_id-1].checked">{{ checkboxOptions[employee.service_id-1].label }}</p>
+									</label>
+								</div></div></div></div>
+								
+								  
+					
+				
+								</div> <br>   		<button type="button" id="prevBtn"  class="next_prev_buttons" style="background-color: #bbbbbb;" >Previous</button>
+								<button type="button" type="submit" id="nextBtn" class="next_prev_buttons" onclick="show('Page2','Page1')">Next</button>	</div>
+									   
+					
+				</div>
+			</form>
+				<!-- SELECT EMPLOYEE -->
+	
+				<div class="select_employee_div tab_reservation" id="employees_tab"id="Page2" style="display:none">
+	
+					<!-- ALERT MESSAGE -->
+	
+					<div class="alert alert-danger" role="alert" style="display: none">
+						Please, select your employee!
+					</div>
+	
+					<div class="text_header">
+						<h1>
+							2. Choice of employee
+						</h1>
+					</div>
+	<br><br>
+					<!-- EMPLOYEES TAB -->
+					
+					<div class="btn-group-toggle" >
+						<div class="items_tab">
+							<div class='itemListElement'*ngFor = "let employee of EmployeeList"><div class = 'item_details'><div>{{ employee.firstName }} {{ employee.lastName }}</div><div class = 'item_select_part'>                                    		<div class="select_item_bttn">
+													
+														<label>
+															<input type="radio" [(ngModel)]="appointments.employee_id" name="selected_employee" style="display: none;" [value]="employee.employee_id">
+															<p class="button-like" [class.selected]="appointments.employee_id === employee.employee_id" >Select</p>
+														  </label>
+															
+												</div>
+										</div></div></div>
+										  <br>  		<button type="button" id="prevBtn" onclick="show('Page1','Page2')" class="next_prev_buttons" style="background-color: #bbbbbb;" >Previous</button>
+										<button type="button" id="nextBtn" class="next_prev_buttons" onclick="show('Page3','Page2')">Next</button>			</div>
+					</div></div>
+				
+	
+	
+				<!-- SELECT DATE TIME -->
+	
+				<div class="select_date_time_div tab_reservation" id="calendar_tab"id="Page3" style="display:none">
+	
+					<!-- ALERT MESSAGE -->
+					
+					<div class="alert alert-danger" role="alert" style="display: none">
+					  Please, select time!
+					</div>
+	
+					<div class="text_header">
+						<h1>
+							3. Choice of Date and Time
+						</h1>
+					</div>
+					
+					<div class="calendar_tab" style="overflow-x: auto;overflow-y: visible;" id="calendar_tab_in">
+						
+									
+
+									</div>
+									<div class="appointments_days">
+										<div *ngFor="let i of getRange(7)" class="appointment_day">
+										  {{ getDayName(i) }}
+										  <br>
+										  {{ getDayNumber(i) }} {{ getMonthName(i) }}
+										  
+										</div>
+										
+									  </div>
+									  
+									  
+									 <div class="available_booking_hours">
+											<div *ngFor="let day of appointmentDays" class="available_booking_hours_column">
+											  <div *ngFor="let timeSlot of availableTimeSlots[day.dayOfWeek]" class="available_booking_hour">
+											
+												<input type="radio" [id]="day.date | date: 'yyyy-MM-dd' + ' ' + timeSlot.start" name="desired_date_time" [value]="setTimeOnDate(day.date, timeSlot.start)" [(ngModel)] = "appointments.start_time"  style="display: none;">
+												<label class="available_booking_hour" style="cursor: pointer" [for]="day.date | date: 'yyyy-MM-dd' + ' ' + timeSlot.start">{{ timeSlot.start }}</label><br><br>
+											  </div>
+											</div>
+										  </div>
+										 
+					<button type="button" id="prevBtn"  class="next_prev_buttons" onclick="show('Page2','Page3')"style="background-color: #bbbbbb;" >Previous</button>
+								<button type="button" id="nextBtn" class="next_prev_buttons" onclick="show('Page4','Page3')">Next</button>	
+							</div>
+	
+	
+				<!-- CLIENT DETAILS -->
+				<form (ngSubmit) = "OnSubmit()">
+
+				<div class="client_details_div tab_reservation" id="client_tab"id="Page4" style="display:none">
+	
+					<div class="text_header">
+						<h1>
+							4. Client Details
+						</h1>
+					</div>
+					<br>
+					<div>
+						<div class="form-group colum-row row">
+							<div class="col-sm-6">
+								<input type="text" class ="form-control" id = "firstName"
+										[(ngModel)] = "client.first_name" name = "firstName" placeholder="First Name">
+							</div><br>
+							<div class="col-sm-6">
+								<input type="text" name="client_last_name" [(ngModel)] = "client.last_name"id="client_last_name" class="form-control" placeholder="Last Name">
+							</div><br>
+							<div class="col-sm-6">
+								<input type="email" name="client_email" [(ngModel)] = "client.client_email"id="client_email" class="form-control" placeholder="E-mail">
+							</div><br>
+							<div class="col-sm-6">
+								<input type="text"  (keyup)="onKey($event)"[(ngModel)]="client.phone_number" name="client_phone_number" id="client_phone_number" class="form-control" placeholder="Phone number">
+							</div>
+
+						</div><br>
+						
+						<button type="button" id="prevBtn"  class="next_prev_buttons"onclick="show('Page3','Page4')" style="background-color: #bbbbbb;" >Previous</button>
+						<button type="button" id="nextBtn"type ="submit"  onclick="show('Page5','Page4')" class="next_prev_buttons"  >finish</button>	
+
+					</div>
+				</div>
+	
+				</form>
+				
+
+	
+			  
+		
+				
+			
+		</div>
+		
+		<div class="client_details_div tab_reservation" id="client_tab" id="Page5" style="display: none;">
+			<div class="box-alert">
+			  <table>
+				<ng-container *ngFor="let employee of Appointments; let last = last">
+				  <tr>
+					<td *ngIf="last">
+					  <p>Confirm your Appointments!</p>
+					  <button (click)="updateAppointements(employee.appointment_id)" class="btn1">Yes</button>
+					</td>
+				  </tr>
+				</ng-container>
+			  </table>
+			</div>
+		  </div>
+		  
+		
+	</section>
+	
+	
+	</body>
