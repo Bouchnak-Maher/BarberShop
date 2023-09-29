@@ -17,6 +17,8 @@ I'm thrilled to share the latest developments from my summer internship project!
 - [Backend and Frontend Technologies](#backend-and-frontend-technologies)
 - [Key Components of the Architecture](#key-components-of-the-architecture)
 - [Microservices Benefits](#microservices-benefits)
+- [Interfaces](#Interfaces)
+
 - [Stay Informed](#stay-informed)
 - [Tags](#tags)
 
@@ -68,8 +70,8 @@ The backend is built using **Spring Boot microservices architecture**, providing
 
 Our microservices architecture offers benefits like modularity, flexibility, ease of maintenance, and scalability. It effectively manages various application functionalities while promoting transparent communication between microservices. These components play a vital role in building a robust, scalable, and easily maintainable application.
 
-## Interface
-**user interface**
+## Interfaces
+**user interface:**
 ![Acueill](https://github.com/Bouchnak-Maher/BarberShop/assets/94197705/125135be-fe12-4853-ba90-fc5270b92a0a)
 ![Servicesoffre](https://github.com/Bouchnak-Maher/BarberShop/assets/94197705/1c5f95cc-aa30-4e8b-9886-cb6b29600ade)
 
@@ -80,6 +82,12 @@ Our microservices architecture offers benefits like modularity, flexibility, eas
 ![employee](https://github.com/Bouchnak-Maher/BarberShop/assets/94197705/6eddba6d-1ee4-45ec-b841-f60e70a31607)
 ![time](https://github.com/Bouchnak-Maher/BarberShop/assets/94197705/2900ae62-1412-4a0c-84e5-490b7d5977f3)
 ![clientdetails](https://github.com/Bouchnak-Maher/BarberShop/assets/94197705/6df182e6-1b02-43b3-a74d-ea6e57b58bbf)
+
+**Admin Interface **
+![employeedamin](https://github.com/Bouchnak-Maher/BarberShop/assets/94197705/f12febf0-5bd4-445e-b6bd3cda84844a0f)
+![Servicesadmin](https://github.com/Bouchnak-Maher/BarberShop/assets/94197705/426b5bb4-2d41-4ada-82c0-7049da7ce106)
+![Login](https://github.com/Bouchnak-Maher/BarberShop/assets/94197705/788b3d72-4c11-4ec6-9710-9386d11c2f34)
+![Schdule](https://github.com/Bouchnak-Maher/BarberShop/assets/94197705/ce318143-a3cc-4067-a1cd-edad12235f15)
 
 ## Stay Informed
 
