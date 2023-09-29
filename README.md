@@ -71,7 +71,6 @@ Our microservices architecture offers benefits like modularity, flexibility, eas
 ## Interface
 **user interface**
 ![Acueill](https://github.com/Bouchnak-Maher/BarberShop/assets/94197705/125135be-fe12-4853-ba90-fc5270b92a0a)
-![Services](https://github.com/Bouchnak-Maher/BarberShop/assets/94197705/eae47a27-96e2-41e0-8256-9ede5be4e6f6)
 
 ![aboutus](https://github.com/Bouchnak-Maher/BarberShop/assets/94197705/9ac276d0-acbc-4a45-bbf6-cdd7d96be5c5)
 ![blog](https://github.com/Bouchnak-Maher/BarberShop/assets/94197705/e82fe114-53fc-4d61-9217-a35adaf04a2c)
