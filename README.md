@@ -83,14 +83,19 @@ Our microservices architecture offers benefits like modularity, flexibility, eas
 ![time](https://github.com/Bouchnak-Maher/BarberShop/assets/94197705/2900ae62-1412-4a0c-84e5-490b7d5977f3)
 ![clientdetails](https://github.com/Bouchnak-Maher/BarberShop/assets/94197705/6df182e6-1b02-43b3-a74d-ea6e57b58bbf)
 
-**Admin Interface **
-![employeedamin](https://github.com/Bouchnak-Maher/BarberShop/assets/94197705/b12a9982-033f-4bab-986e-306af3bf48b9)
-![Servicesadmin](https://github.com/Bouchnak-Maher/BarberShop/assets/94197705/426b5bb4-2d41-4ada-82c0-7049da7ce106)
+**Admin Interface:**
+
 ![Login](https://github.com/Bouchnak-Maher/BarberShop/assets/94197705/788b3d72-4c11-4ec6-9710-9386d11c2f34)
-![Schdule](https://github.com/Bouchnak-Maher/BarberShop/assets/94197705/ce318143-a3cc-4067-a1cd-edad12235f15)
-![Cancled](https://github.com/Bouchnak-Maher/BarberShop/assets/94197705/ab2b49bb-ed1d-485b-af4b-dc42c3f34530)
-![clientadmin](https://github.com/Bouchnak-Maher/BarberShop/assets/94197705/7033d06c-297e-4fa8-93d9-929e58e96279)
+
+![UpcamingBooking](https://github.com/Bouchnak-Maher/BarberShop/assets/94197705/3af32e1f-d3ff-4a26-bdba-8cfeff6dc13e)
 ![AllBooking](https://github.com/Bouchnak-Maher/BarberShop/assets/94197705/f90ab249-4f86-4bf4-8cfd-c16b80b8fef4)
+![Cancled](https://github.com/Bouchnak-Maher/BarberShop/assets/94197705/ab2b49bb-ed1d-485b-af4b-dc42c3f34530)
+![Servicesadmin](https://github.com/Bouchnak-Maher/BarberShop/assets/94197705/426b5bb4-2d41-4ada-82c0-7049da7ce106)
+![clientadmin](https://github.com/Bouchnak-Maher/BarberShop/assets/94197705/7033d06c-297e-4fa8-93d9-929e58e96279)
+
+![employeedamin](https://github.com/Bouchnak-Maher/BarberShop/assets/94197705/b12a9982-033f-4bab-986e-306af3bf48b9)
+![Schdule](https://github.com/Bouchnak-Maher/BarberShop/assets/94197705/ce318143-a3cc-4067-a1cd-edad12235f15)
+
 
 
 ## Stay Informed
