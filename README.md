@@ -68,6 +68,9 @@ The backend is built using **Spring Boot microservices architecture**, providing
 
 Our microservices architecture offers benefits like modularity, flexibility, ease of maintenance, and scalability. It effectively manages various application functionalities while promoting transparent communication between microservices. These components play a vital role in building a robust, scalable, and easily maintainable application.
 
+## Microservices Benefits
+![Servicesadmin](https://github.com/Bouchnak-Maher/BarberShop/assets/94197705/426b5bb4-2d41-4ada-82c0-7049da7ce106)
+
 ## Stay Informed
 
 Stay tuned for more updates as we make progress on this exciting project! 💪💼✨
