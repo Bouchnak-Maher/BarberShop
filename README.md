@@ -3,7 +3,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
 
-🚀 Exciting Summer Internship Project Update! 🌞
+🚀  Summer Internship Project  🌞
 
 Hello everyone,
 
