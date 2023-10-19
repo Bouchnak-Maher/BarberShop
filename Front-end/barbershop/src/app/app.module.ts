@@ -14,6 +14,7 @@ import { EmployeesScheduleComponent } from './employees-schedule/employees-sched
 import { ServicesAdminComponent } from './services-admin/services-admin.component';
 import { ClientAdminComponent } from './client-admin/client-admin.component';
 import { EmployeAdminComponent } from './employe-admin/employe-admin.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { EmployeAdminComponent } from './employe-admin/employe-admin.component';
     EmployeesScheduleComponent,
     ServicesAdminComponent,
     ClientAdminComponent,
-    EmployeAdminComponent
+    EmployeAdminComponent,
+    NavbarComponent
   ],
   imports: [
     ReactiveFormsModule,
