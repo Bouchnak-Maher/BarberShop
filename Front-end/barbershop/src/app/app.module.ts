@@ -6,10 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { IonicModule } from '@ionic/angular';
 import { AcceuilComponent } from './acceuil/acceuil.component';
-import { ServicesComponent } from './services/services.component';
-import { AboutComponent } from './about/about.component';
 import { AppointementComponent } from './appointement/appointement.component';
-import { BlogComponent } from './blog/blog.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { AdminComponent } from './admin/admin.component';
@@ -23,10 +20,9 @@ import { EmployeAdminComponent } from './employe-admin/employe-admin.component';
     AppComponent,
   
     AcceuilComponent,
-    ServicesComponent,
-    AboutComponent,
+    
     AppointementComponent,
-    BlogComponent,
+    
     LoginComponent,
     RegisterComponent,
     AdminComponent,
