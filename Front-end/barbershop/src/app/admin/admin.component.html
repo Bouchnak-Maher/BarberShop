@@ -391,8 +391,8 @@
                             </tr>
                         </thead>
 						<tbody>
-							<tr *ngFor="let appointment of appointmentsWithClients">
-
+							<ng-container *ngFor="let appointment of appointmentsWithClients">
+								<tr *ngIf="appointment.canceled === 0 ">
 								
 							  <td>{{ appointment.date_created | date:'dd/MM/yyyy HH:mm:ss' }}</td>
 							  <td>{{ appointment.start_time | date:'dd/MM/yyyy HH:mm:ss' }}</td>
@@ -441,6 +441,7 @@
 								</div>
 							  </td>
 							</tr>
+						</ng-container>
 
 						  </tbody>
 						  
