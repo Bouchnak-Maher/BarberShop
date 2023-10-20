@@ -62,9 +62,7 @@ The backend is built using **Spring Boot microservices architecture**, providing
 
 5. **Microservice Admin**: Manages admin-related data and operations, including appointments, employees, services, and work schedules.
 
-6. **OpenFeign Integration**: Simplifies communication between microservices through declarative REST calls, streamlining inter-service interactions.
-
-7. **Zipkin Usage**: Incorporates Zipkin for distributed tracing, improving application observability by tracking request journeys through microservices and aiding in latency issue identification.
+6. **Zipkin Usage**: Incorporates Zipkin for distributed tracing, improving application observability by tracking request journeys through microservices and aiding in latency issue identification.
 
 ## Microservices Benefits
 
